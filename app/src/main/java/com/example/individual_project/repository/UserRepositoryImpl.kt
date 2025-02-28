@@ -50,4 +50,18 @@ class UserRepositoryImpl: UserRepository {
         }
     }
 
+    override fun forgetPassword(
+        email: String,
+        callback: (Boolean, String) -> Unit
+    ) {
+        auth.sendPasswordResetEmail(email).addOnCompleteListener{
+            if (it.isSuccessful){
+                callback(true,"Reset link sent to your email")
+            }else{
+                callback(false,it.exception?.message.toString())
+            }
+        }
+    }
+
+
 }

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -18,7 +19,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/cartaddedImage"
+                android:id="@+id/productImageShow"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="7dp"
@@ -30,37 +31,37 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/cartproductDisplayName"
+                android:id="@+id/productDisplayName"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="20dp"
                 android:text="Product Name"
-                app:layout_constraintStart_toEndOf="@+id/cartaddedImage"
+                app:layout_constraintStart_toEndOf="@+id/productImageShow"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/cartproductDisplayDes"
+                android:id="@+id/productDisplayDes"
                 android:layout_width="84dp"
                 android:layout_height="24dp"
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="14dp"
                 android:text="Product des "
-                app:layout_constraintStart_toEndOf="@+id/cartaddedImage"
-                app:layout_constraintTop_toBottomOf="@+id/cartproductDisplayName" />
+                app:layout_constraintStart_toEndOf="@+id/productImageShow"
+                app:layout_constraintTop_toBottomOf="@+id/productDisplayName" />
 
             <TextView
-                android:id="@+id/cartProductDisplayPrice"
+                android:id="@+id/ProductDisplayPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="14dp"
                 android:text="Product Price"
-                app:layout_constraintStart_toEndOf="@+id/cartaddedImage"
-                app:layout_constraintTop_toBottomOf="@+id/cartproductDisplayDes" />
+                app:layout_constraintStart_toEndOf="@+id/productImageShow"
+                app:layout_constraintTop_toBottomOf="@+id/productDisplayDes" />
 
             <ProgressBar
-                android:id="@+id/CartImageProgressBar"
+                android:id="@+id/productImageProgressBar"
                 style="?android:attr/progressBarStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -70,13 +71,13 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/removeBtn"
+                android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="116dp"
-                android:text="Remove from cart"
-                app:layout_constraintStart_toEndOf="@+id/cartaddedImage"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="132dp"
+                android:text="Add to Cart"
+                app:layout_constraintStart_toEndOf="@+id/productImageShow"
                 app:layout_constraintTop_toTopOf="parent" />
 
 

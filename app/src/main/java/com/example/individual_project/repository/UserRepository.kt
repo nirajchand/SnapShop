@@ -11,4 +11,6 @@ interface UserRepository {
 
     fun login(email: String,password: String,callback: (Boolean, String) -> Unit)
 
+    fun forgetPassword(email: String,callback: (Boolean, String) -> Unit)
+
 }

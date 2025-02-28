@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/updateProductLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.UpdateProductActivity">
+
+
+    <TextView
+        android:id="@+id/Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="128dp"
+        android:text="Update product"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="209dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="127dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Heading"
+        app:srcCompat="@drawable/imageplaceholder" />
+
+    <EditText
+        android:id="@+id/UpdateproductName"
+        android:layout_width="296dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="62dp"
+        android:ems="10"
+        android:hint="Product Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productImage" />
+
+    <EditText
+        android:id="@+id/UpdateproductDes"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="148dp"
+        android:ems="10"
+        android:hint="Product Des"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateproductName" />
+
+    <EditText
+        android:id="@+id/UpdateproductPrice"
+        android:layout_width="297dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateproductDes" />
+
+    <Button
+        android:id="@+id/Updateaddbutton"
+        android:layout_width="168dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="200dp"
+        android:text="update product"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateproductPrice" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,4 +15,8 @@ class UserViewModel (val repo: UserRepository){
     fun login(email: String,password: String,callback: (Boolean, String) -> Unit){
         return repo.login(email,password,callback)
     }
+
+    fun forgetPassword(email: String,callback: (Boolean, String) -> Unit){
+        return repo.forgetPassword(email,callback)
+    }
 }
